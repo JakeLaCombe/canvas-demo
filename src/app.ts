@@ -10,6 +10,8 @@ class App {
         const rect = this.canvas.getBoundingClientRect();
         this.canvas.width = document.body.clientWidth;
         this.canvas.height = document.body.clientHeight;
+
+        document.body.appendChild(this.canvas);
         
         this.init = this.init.bind(this);
         this.redraw = this.redraw.bind(this);
