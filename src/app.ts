@@ -1,4 +1,8 @@
 import Circle from "./models/Circle";
+import rickVideo from "./assets/movie.mp4";
+import VideoClip from "./models/VideoClip";
+import { RickAshley } from "./progress/RickAshley";
+import { FinalApp } from "./progress/FinalApp";
 
 class App {
    canvas: HTMLCanvasElement = document.createElement("canvas");
@@ -7,7 +11,6 @@ class App {
    constructor() {
         // create the canvas html element and attach it to the webpage
         this.canvas.id = "gameCanvas";
-        const rect = this.canvas.getBoundingClientRect();
         this.canvas.width = document.body.clientWidth;
         this.canvas.height = document.body.clientHeight;
 
@@ -18,13 +21,12 @@ class App {
     }
 
     redraw() {
-       
+        window.requestAnimationFrame(this.redraw);
     }
-
    
 
     async init() {
-       
+       window.requestAnimationFrame(this.redraw);
     }
 }
 

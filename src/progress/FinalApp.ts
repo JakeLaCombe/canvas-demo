@@ -1,6 +1,6 @@
 import Circle from "../models/Circle";
 
-class FinalApp {
+export class FinalApp {
    canvas: HTMLCanvasElement = document.createElement("canvas");
    timeout?: NodeJS.Timeout;
    circles: Circle[];

@@ -20,7 +20,7 @@ module.exports = {
                 exclude: /node_modules/,
             },
             {
-                test: /\.(png|jpe?g|gif|glb|gltf|babylon)$/i,
+                test: /\.(png|jpe?g|gif|glb|gltf|babylon|mp4)$/i,
                 loader: 'file-loader',
                 options: {
                     publicPath: './',
