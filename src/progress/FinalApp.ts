@@ -58,6 +58,3 @@ export class FinalApp {
        }, 1000 / 60)
     }
 }
-
-const app = new FinalApp();
-app.init();
